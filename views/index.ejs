@@ -2,15 +2,16 @@
     <body>
         <div>
             <h1><%= title %></h1>
-            <br>
             <% for (let i=0; i<messages.length; i++) { %>
                 <div>
-                    <div>User: <%= messages[i].user %></div>
-                    <div><%= messages[i].text %></div>
-                    <div>Added: <%= messages[i].added %></div>
+                    <div><%= messages[i].user %>: <%= messages[i].text %></div>
+                    <div>added: <%= messages[i].added %></div>
                 </div>
                 <br>
             <% } %>
+            <a href="<%= link.href%>">
+                <span> <%= link.text %> </span>
+            </a>
         </div>
     </body>
 </html>
